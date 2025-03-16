@@ -1,0 +1,98 @@
+body{
+    background-color: black;
+    color: #fff;;
+    margin:0 20px;
+    font-family: "Spectral", serif;
+    font-weight: 200;
+    font-style: normal;
+    padding-right:50px ;
+    
+}
+header{
+   
+    margin-bottom: 2px;
+
+}
+nav{
+    height: 75px;
+
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    
+   
+    margin-bottom: 10px;
+   
+}
+.nav-items{
+    height:70px;
+    
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:50px;
+
+   
+}
+nav a{
+    color:#fff;
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+    
+}
+.welcome-box{
+    
+    flex:75%;
+    
+    
+}
+.welcome-message{
+    padding-left:100px;
+    line-height: 0;
+    padding-bottom:0;
+    font-size: 70px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    
+    
+}
+.image-container{
+    
+  
+  
+   flex:20%;
+}
+img{
+    
+    height:300px;
+    width: 350px;
+    border-radius: 75%;
+}
+.Name-box{
+    padding-left:150px;   
+       
+}
+
+
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    font-size: large;
+    font-weight: 300;
+    border-radius: 20px;
+    width:250px;
+    height:30px;
+}
