@@ -1,39 +1,30 @@
 body{
-    background-color: black;
-    color: #fff;;
-    margin:0 20px;
+    background-color: rgb(32, 31, 31);
+    color: #fff;    
+    margin:0px;
     font-family: "Spectral", serif;
     font-weight: 200;
-    font-style: normal;
-    padding-right:50px ;
-    
+    font-style: normal;   
 }
 header{
-   
+    background-color: black;
     margin-bottom: 2px;
-
 }
 nav{
     height: 75px;
-
+    background-color: black;
     display:flex;
     justify-content: end;
     align-items: center;
-    
-   
     margin-bottom: 10px;
    
 }
 .nav-items{
     height:70px;
-    
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:50px;
-
-   
+    gap:50px;  
 }
 nav a{
     color:#fff;
@@ -45,43 +36,38 @@ nav a{
 }
 .main{
     display: flex;
+    flex-wrap: wrap;
+    gap:20px;
     justify-content: space-between;
-    padding: 20px;
-    
-    
+    padding: 20px; 
 }
-.welcome-box{
-    
-    flex:75%;
-    
-    
+.welcome-box{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
 }
 .welcome-message{
-    padding-left:100px;
-    line-height: 0;
     padding-bottom:0;
-    font-size: 70px;
+    line-height: 20px;
+    font-size: 35px;
     font-weight: 500;
-    margin-bottom: 0px;
-    
-    
+    margin-bottom: 0px;  
 }
-.image-container{
-    
-  
-  
-   flex:20%;
-}
+
 img{
     
     height:300px;
     width: 350px;
+
     border-radius: 75%;
 }
-.Name-box{
-    padding-left:150px;   
-       
+.image-container{
+    
+    
+    display: flex;
+    justify-content: center;
 }
+
 
 
 
@@ -95,4 +81,41 @@ img{
     border-radius: 20px;
     width:250px;
     height:30px;
+}
+@media (max-width: 816px) {
+    .main{
+       
+        flex-direction: column;
+
+    }
+    .welcome-box{
+        width:100%;
+        
+
+    }
+    .welcome-message{
+        
+        padding:0px;
+       
+    }
+   
+    .Name-box{
+        display:flex;
+        justify-content: center;
+       
+    }
+    .image-container{
+        width:100%;
+    }
+    .nav-items{
+        display: none;
+    }
+}
+@media (max-width:450px) {
+    .welcome-message{
+        
+        font-size: small;
+       
+    }
+   
 }
