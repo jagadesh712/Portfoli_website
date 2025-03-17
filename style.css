@@ -1,10 +1,14 @@
 body{
+    
     background-color: rgb(32, 31, 31);
     color: #fff;    
     margin:0px;
     font-family: "Spectral", serif;
     font-weight: 200;
     font-style: normal;   
+}
+.container{
+    padding-left:5%;
 }
 header{
     background-color: black;
@@ -35,74 +39,91 @@ nav a{
     text-decoration: none;
 }
 .main{
+    margin-top:  70px;
+    /* border:solid 2px red; */
     display: flex;
     flex-wrap: wrap;
     gap:20px;
     justify-content: space-between;
-    padding: 20px; 
+    margin-bottom:  70px;
+    
 }
 .welcome-box{  
+    /* border: solid 2px ; */
     display: flex;
     flex-direction: column;
     align-items: center;   
+    justify-content: center;
 }
 .welcome-message{
     padding-bottom:0;
     line-height: 20px;
     font-size: 35px;
     font-weight: 500;
-    margin-bottom: 0px;  
+    margin-bottom: 0px; 
+    /* border: solid 2px red;  */
 }
 
-img{
-    
+img{  
     height:300px;
     width: 350px;
-
     border-radius: 75%;
 }
-.image-container{
-    
-    
+.image-container{ 
     display: flex;
     justify-content: center;
 }
-
-
-
-
+.Name-box{
+    width: 100%;
+    /* border:solid 1px yellow; */
+    display: flex;
+    justify-content: end;
+    padding-right: 20%;
+    
+   
+}
 .name{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #fff;
+    border: 1px solid #fff; 
     font-size: large;
     font-weight: 300;
     border-radius: 20px;
     width:250px;
     height:30px;
 }
-@media (max-width: 816px) {
-    .main{
-       
+#About h2{
+    padding-left: 5%;
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    /* border: solid 2px white; */
+   
+}
+#About p{
+    padding-left:10%;
+}
+@media (max-width: 840px) {
+    .container{
+        padding-left: 0px;
+    }
+    #About{
+        text-align: center;
+    }
+    .main{ 
         flex-direction: column;
-
     }
     .welcome-box{
         width:100%;
-        
-
     }
-    .welcome-message{
-        
-        padding:0px;
-       
+    .welcome-message{      
+        padding:0px;   
     }
-   
     .Name-box{
         display:flex;
-        justify-content: center;
-       
+        justify-content: center;   
     }
     .image-container{
         width:100%;
@@ -110,12 +131,18 @@ img{
     .nav-items{
         display: none;
     }
+    .Name-box{
+        width:fit-content;
+       padding: 0%;
+        
+    }
+    #About p{
+        padding-left: 0%;
+    }
 }
 @media (max-width:450px) {
-    .welcome-message{
-        
-        font-size: small;
-       
+    .welcome-message{        
+        font-size: small;       
     }
    
 }
