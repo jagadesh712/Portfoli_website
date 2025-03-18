@@ -9,10 +9,15 @@ body{
 }
 .container{
     padding-left:5%;
+    padding-top: 80px; 
+    
 }
 header{
+    width:100%;
+    margin-top:0;
+    position: fixed;
     background-color: black;
-    margin-bottom: 2px;
+    
 }
 nav{
     height: 75px;
@@ -78,9 +83,11 @@ img{
     /* border:solid 1px yellow; */
     display: flex;
     justify-content: end;
-    padding-right: 20%;
-    
-   
+    padding-right: 20%; 
+}
+#About,#Projects{
+    margin-bottom:70px;
+    padding-right: 50px; 
 }
 .name{
     display: flex;
@@ -93,8 +100,8 @@ img{
     width:250px;
     height:30px;
 }
-#About h2{
-    padding-left: 5%;
+#About h2,#Projects h2{
+    
     font-family: "Dancing Script", cursive;
     font-size: 30px;
     font-weight: 600;
@@ -102,14 +109,17 @@ img{
     /* border: solid 2px white; */
    
 }
-#About p{
-    padding-left:10%;
+
+nav a:hover{
+    transform: scale(1.1);
+     transition-duration: 0.4s; 
+    
 }
 @media (max-width: 840px) {
     .container{
         padding-left: 0px;
     }
-    #About{
+    #About,#Projects{
         text-align: center;
     }
     .main{ 
@@ -136,7 +146,7 @@ img{
        padding: 0%;
         
     }
-    #About p{
+    #About p,#Projects p{
         padding-left: 0%;
     }
 }
