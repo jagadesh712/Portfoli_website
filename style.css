@@ -7,7 +7,13 @@ body{
     font-weight: 200;
     font-style: normal;   
 }
+html {
+    scroll-padding-top: 90px;  /* Adjusts scroll position to account for the fixed header */
+    scroll-behavior: smooth;
+}
+
 .container{
+   
     padding-left:5%;
     padding-top: 80px; 
     
@@ -17,7 +23,7 @@ header{
     margin-top:0;
     position: fixed;
     background-color: black;
-    
+   
 }
 nav{
     height: 75px;
@@ -26,6 +32,7 @@ nav{
     justify-content: end;
     align-items: center;
     margin-bottom: 10px;
+    padding-right: 20px;
    
 }
 .nav-items{
@@ -44,13 +51,14 @@ nav a{
     text-decoration: none;
 }
 .main{
-    margin-top:  70px;
+    height: 85vh;
+    
     /* border:solid 2px red; */
     display: flex;
     flex-wrap: wrap;
     gap:20px;
     justify-content: space-between;
-    margin-bottom:  70px;
+    
     
 }
 .welcome-box{  
@@ -75,6 +83,7 @@ img{
     border-radius: 75%;
 }
 .image-container{ 
+    align-items: center;
     display: flex;
     justify-content: center;
 }
@@ -116,10 +125,12 @@ nav a:hover{
     
 }
 @media (max-width: 840px) {
+   
     .container{
         padding-left: 0px;
     }
     #About,#Projects{
+        padding:5%;
         text-align: center;
     }
     .main{ 
@@ -148,6 +159,7 @@ nav a:hover{
     }
     #About p,#Projects p{
         padding-left: 0%;
+        
     }
 }
 @media (max-width:450px) {
